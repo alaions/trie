@@ -16,4 +16,5 @@ searchList（）查询符合前缀的所有词语
 searchListPlus（）增加拼音查询
 
 searchWord（）查询一段文字中是否含有特定词（敏感词检测）
+敏感词下载：https://github.com/linjinmin/sensitiveWork/blob/master/sensitive_work.sql
 ```
