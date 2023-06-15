@@ -282,6 +282,27 @@ public class Trie implements Serializable {
         return resultList;
     }
 
+    /**
+     * 删除
+     * @param word
+     * @return
+     */
+    private boolean delete(String word){
+        TrieNode node = root;
+        for (int i=0; i<word.length(); i++) {
+            String w = String.valueOf(word.charAt(i));
+            if (node.sonMap.containsKey(w)) {
+
+                node = node.sonMap.get(w);
+
+            } else {
+                return false;
+            }
+        }
+        node.isEnd = false;
+        return true;
+    }
+
     public static void print(TrieNode root){
         TrieNode nextnode = null;
         for (String key : root.sonMap.keySet()) {
