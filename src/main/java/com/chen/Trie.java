@@ -315,7 +315,7 @@ public class Trie {
     public static void main(String[] args) {
         Trie chTrie = new Trie();
        // String str = "word文档,wifi万能钥匙,windows10,网易云游戏,word的删除空白页,微信,万相之王,微博,万能钥匙wifi免费下载,维生素c的作用与功效";
-        String str = "扎汗俄马尔,飞机场,飞机翼,fjall,fjeld,福建政府,福建船政，";
+        String str = "扎汗俄马尔,飞机场,飞机翼,fjall,fjeld,福建政府,福建船政d，";
         String[] splits = str.split(",");
         // 循环插入字典树中
         for (String split : splits) {
