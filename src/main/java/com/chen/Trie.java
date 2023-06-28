@@ -1,9 +1,8 @@
 package com.chen;
 
-import java.io.Serializable;
 import java.util.*;
 
-public class Trie implements Serializable {
+public class Trie {
 
     private List<String> list;
     private Trie trie;
